@@ -4,8 +4,8 @@
 # change dir to current work dir
 cd "$(dirname "$0")" || exit 1
 pwd
-cp ./res/disable_awdl.sh ~/disable_awdl.sh
-sudo chmod u+x ~/disable_awdl.sh
+cp ./res/disable_awdl.sh ~/.disable_awdl.sh
+sudo chmod u+x ~/.disable_awdl.sh
 # sudo chmod +x ~/disable_awdl.sh
 # cd /Library/LaunchDaemons/ && sudo curl -sO https://raw.githubusercontent.com/meterup/awdl_wifi_scripts/main/com.meter.wifi.awdl.plist
 sudo cp ./res/com.meter.wifi.awdl.plist /Library/LaunchDaemons/

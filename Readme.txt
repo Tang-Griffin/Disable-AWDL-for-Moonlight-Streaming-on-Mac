@@ -22,3 +22,6 @@ Awdl会频繁切换wifi信道并造成网络不通畅，在moonlight连接时需
 sudo ifconfig awdl0 down
 查看awdl0状态：
 ifconfig awdl0
+
+Log:
+251015 把主程序名称前面加.，使得在~/下隐藏
