@@ -50,14 +50,15 @@ while true; do
             if ifconfig awdl0 | grep -q "status: active"; then
                 (set -x; ifconfig awdl0 down)
             fi
+            sleep 2  # could be modified
         else
             # if ifconfig awdl0 | grep -q "<DOWN"; then
             if ifconfig awdl0 | grep -q "status: inactive"; then
                 (set -x; ifconfig awdl0 up)
             fi
+            sleep 10  # could be modified
         fi
     } || sleep 10 # capture error, in case when launched before network init.
     # note: the status of awdl0 is checked by the return of ifconfig.
 
-    sleep 7  # could be modified
 done
